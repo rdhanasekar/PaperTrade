@@ -10,7 +10,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build:css": "postcss src/tailwind.css -o public/tailwind.css",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "vue-cli-service": "vue-cli-service"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.3.4",
