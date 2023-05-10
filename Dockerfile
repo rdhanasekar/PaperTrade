@@ -16,6 +16,7 @@ COPY ./server/package*.json .
 RUN npm install
 COPY ./server .
 COPY ./common ../common
+ADD ./server/.env.sample ./.env 
 COPY --from=frontend ./client/dist ./public
 RUN npm run build
 EXPOSE 9090
