@@ -3,7 +3,7 @@ WORKDIR /client
 # RUN npm install -g http-server
 COPY ./client/package*.json .
 RUN npm install
-# RUN npx browserslist@latest --update-db
+RUN npx browserslist@latest --update-db
 COPY ./client .
 COPY ./common ../common
 RUN npm run build
