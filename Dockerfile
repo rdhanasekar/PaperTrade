@@ -15,6 +15,7 @@ WORKDIR /server
 COPY ./server/package*.json .
 RUN npm install
 COPY ./server .
+COPY ./common ../common
 COPY --from=frontend ./client/dist ./public
 RUN npm run build
 EXPOSE 9090
